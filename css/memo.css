@@ -1,3 +1,6 @@
+/*---------------------------
+    header～footerの基礎
+*-----------------------*/
 .head_logo img {
     width: 300px;
     padding: 10px 0;
@@ -17,7 +20,7 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #dbe000;
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
@@ -27,8 +30,17 @@ main {
     position: relative;
 }
 
+.error-message {
+    text-align: right;
+    color: red;
+}
+
+.show-error {
+    display: block;
+}
+
 footer {
-    background-color: #fff;
+    background-color: #dbe000;
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
@@ -42,7 +54,7 @@ footer {
 
 .contact_title {
     margin: 0 0 64px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     /* 中央揃えに変更 */
@@ -140,42 +152,10 @@ input[type*="radio"]:checked {
 *-----------------------*/
 
 .btn-submit {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: none;
+    /* display: inline-block のプロパティを削除します */
     display: block;
     margin: 0 auto;
-    /* 水平方向に中央揃えに変更 */
     padding: 6px 24px;
-    /* ボタンのサイズを調整 */
     font-size: 14px;
-    /* フォントサイズを調整 */
     margin-top: 16px;
-    display: inline-block;
-    /* ボタンを横並びにする */
-    margin-right: 10px;
-    /* ボタン間の水平方向のスペースを調整 */
-}
-
-/*---------------------------
-    削除ボタン
-*-----------------------*/
-
-.btn-clear {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: none;
-    display: block;
-    margin: 0 auto;
-    /* 水平方向に中央揃えに変更 */
-    padding: 6px 24px;
-    /* ボタンのサイズを調整 */
-    font-size: 14px;
-    /* フォントサイズを調整 */
-    margin-top: 16px;
-    margin-left: 10px;
-    display: inline-block;
-    /* ボタンを横並びにする */
 }
